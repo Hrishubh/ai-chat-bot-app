@@ -1,9 +1,12 @@
 import 'package:chat_bot_app/provider/msg_provider.dart';
 import 'package:chat_bot_app/screen/splash_screen.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-void main() {
+Future<void> main() async {
+  // Load the .env file
+  await dotenv.load();
   runApp(
     MultiProvider(
       providers: [

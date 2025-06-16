@@ -102,3 +102,7 @@ releases/
 *.apk
 *.aab
 
+
+# Environment variables
+.env
+
